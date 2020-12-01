@@ -1,0 +1,57 @@
+//
+//  Drinks.swift
+//  FinalProject
+//
+//  Created by Rebekah Hale on 11/30/20.
+//
+
+// DRINKS:
+/*
+ coffee
+ - decaf or not
+ - ammount of shots
+ - ammount of liquid
+ water
+ - ammount
+ tea
+ - decaf or not
+ - ammount of shots
+ - ammount of liquid
+ alcohol
+ - wine
+ - - ammount
+ - beer
+ - - ammount
+ - cockatails = 40%
+ - - ammount
+ - other
+  - - ammount
+ juice
+ - ammount
+ soda
+ - caffinated
+ - diet - regular - sugar free
+ - ammount
+ milk
+ - ammount
+ energy drink
+ - ammount
+ sport drink
+ - ammount
+ */
+
+import Foundation
+
+class Drinks {
+    var type: String
+    var ammount: Double
+    var date: Date
+    var time: Date
+    
+    init (type: String, ammount: Double, date: Date, time: Date ) {
+        self.type = type
+        self.ammount = ammount
+        self.date = date
+        self.time = time
+    }
+}

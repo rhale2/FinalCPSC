@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		BF3D1C432575D8F5006B3D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */; };
 		BF3D1C452575D8F5006B3D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */; };
-		BF3D1C472575D8F5006B3D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C462575D8F5006B3D7D /* ViewController.swift */; };
+		BF3D1C472575D8F5006B3D7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C462575D8F5006B3D7D /* SettingsViewController.swift */; };
 		BF3D1C4A2575D8F5006B3D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3D1C482575D8F5006B3D7D /* Main.storyboard */; };
 		BF3D1C4C2575D8F7006B3D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3D1C4B2575D8F7006B3D7D /* Assets.xcassets */; };
 		BF3D1C4F2575D8F7006B3D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3D1C4D2575D8F7006B3D7D /* LaunchScreen.storyboard */; };
+		BF3D1C582575D976006B3D7D /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C572575D976006B3D7D /* AddDrinkViewController.swift */; };
+		BF3D1C5C2575D988006B3D7D /* PreviousDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C5B2575D988006B3D7D /* PreviousDayViewController.swift */; };
+		BF3D1C602575DBC5006B3D7D /* WaterLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C5F2575DBC5006B3D7D /* WaterLogViewController.swift */; };
+		BF3D1C632575DC0F006B3D7D /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C622575DC0F006B3D7D /* Drinks.swift */; };
+		BF3D1C672575E06E006B3D7D /* HydratingDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C662575E06E006B3D7D /* HydratingDrinks.swift */; };
+		BF3D1C6A2575E09A006B3D7D /* DehydratingDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */; };
+		BF3D1C6E2575E0B2006B3D7D /* AlcoholicDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C6D2575E0B2006B3D7D /* AlcoholicDrinks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF3D1C3F2575D8F5006B3D7D /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF3D1C462575D8F5006B3D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF3D1C462575D8F5006B3D7D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BF3D1C492575D8F5006B3D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF3D1C4B2575D8F7006B3D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3D1C4E2575D8F7006B3D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3D1C502575D8F7006B3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3D1C572575D976006B3D7D /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
+		BF3D1C5B2575D988006B3D7D /* PreviousDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousDayViewController.swift; sourceTree = "<group>"; };
+		BF3D1C5F2575DBC5006B3D7D /* WaterLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLogViewController.swift; sourceTree = "<group>"; };
+		BF3D1C622575DC0F006B3D7D /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		BF3D1C662575E06E006B3D7D /* HydratingDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydratingDrinks.swift; sourceTree = "<group>"; };
+		BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DehydratingDrinks.swift; sourceTree = "<group>"; };
+		BF3D1C6D2575E0B2006B3D7D /* AlcoholicDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholicDrinks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,19 @@
 		BF3D1C412575D8F5006B3D7D /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				BF3D1C4D2575D8F7006B3D7D /* LaunchScreen.storyboard */,
+				BF3D1C482575D8F5006B3D7D /* Main.storyboard */,
+				BF3D1C5F2575DBC5006B3D7D /* WaterLogViewController.swift */,
+				BF3D1C572575D976006B3D7D /* AddDrinkViewController.swift */,
+				BF3D1C5B2575D988006B3D7D /* PreviousDayViewController.swift */,
+				BF3D1C462575D8F5006B3D7D /* SettingsViewController.swift */,
 				BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */,
 				BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */,
-				BF3D1C462575D8F5006B3D7D /* ViewController.swift */,
-				BF3D1C482575D8F5006B3D7D /* Main.storyboard */,
+				BF3D1C622575DC0F006B3D7D /* Drinks.swift */,
+				BF3D1C662575E06E006B3D7D /* HydratingDrinks.swift */,
+				BF3D1C6D2575E0B2006B3D7D /* AlcoholicDrinks.swift */,
+				BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */,
 				BF3D1C4B2575D8F7006B3D7D /* Assets.xcassets */,
-				BF3D1C4D2575D8F7006B3D7D /* LaunchScreen.storyboard */,
 				BF3D1C502575D8F7006B3D7D /* Info.plist */,
 			);
 			path = FinalProject;
@@ -137,9 +158,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3D1C472575D8F5006B3D7D /* ViewController.swift in Sources */,
+				BF3D1C472575D8F5006B3D7D /* SettingsViewController.swift in Sources */,
 				BF3D1C432575D8F5006B3D7D /* AppDelegate.swift in Sources */,
 				BF3D1C452575D8F5006B3D7D /* SceneDelegate.swift in Sources */,
+				BF3D1C602575DBC5006B3D7D /* WaterLogViewController.swift in Sources */,
+				BF3D1C582575D976006B3D7D /* AddDrinkViewController.swift in Sources */,
+				BF3D1C672575E06E006B3D7D /* HydratingDrinks.swift in Sources */,
+				BF3D1C6A2575E09A006B3D7D /* DehydratingDrinks.swift in Sources */,
+				BF3D1C6E2575E0B2006B3D7D /* AlcoholicDrinks.swift in Sources */,
+				BF3D1C5C2575D988006B3D7D /* PreviousDayViewController.swift in Sources */,
+				BF3D1C632575DC0F006B3D7D /* Drinks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
