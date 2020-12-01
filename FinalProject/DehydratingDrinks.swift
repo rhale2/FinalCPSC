@@ -8,8 +8,8 @@
 import Foundation
 
 class DehydratingDrinks: Drinks {
-    var caffeinated: Bool
-    var caffinePercentage: Double
+    var caffeinated: Bool = false
+    var caffeinePercentage: Double
     
     init (caffeinated: Bool) {
         self.caffeinated = caffeinated

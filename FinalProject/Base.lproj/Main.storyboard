@@ -15,10 +15,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bfo-vC-Nct">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-pc-vZq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgZ-jK-B7Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="210"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-Sd-3bs">
+                                                <rect key="frame" x="75.5" y="0.0" width="338.5" height="210"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-gK-eza">
+                                        <rect key="frame" x="0.0" y="230" width="414" height="210"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-qW-gyY">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="210"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26d-Rd-TSf">
+                                                <rect key="frame" x="78.5" y="0.0" width="335.5" height="210"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pph-ZV-t7s">
+                                        <rect key="frame" x="0.0" y="460" width="414" height="392"/>
+                                        <state key="normal" title="Save"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bfo-vC-Nct" secondAttribute="bottom" id="12s-71-w59"/>
+                            <constraint firstItem="bfo-vC-Nct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9dq-iM-YWS"/>
+                            <constraint firstItem="bfo-vC-Nct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nx6-pv-sHq"/>
+                            <constraint firstItem="bfo-vC-Nct" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OYE-QP-tco"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="B5g-Xi-tWb"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="B5g-Xi-tWb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,19 +80,47 @@
                     <view key="view" contentMode="scaleToFill" id="7Ar-6M-aLj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gds-Ho-w8r">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Water Log" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PV2-4T-Pzc">
+                                        <rect key="frame" x="115.5" y="0.0" width="183" height="713.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="713.5" id="mKG-H9-Rbc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hydration Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myr-6S-TMn">
+                                        <rect key="frame" x="148" y="748.5" width="118.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gUM-Gr-4bl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gds-Ho-w8r" firstAttribute="top" secondItem="gUM-Gr-4bl" secondAttribute="top" id="8eV-Po-glh"/>
+                            <constraint firstItem="gUM-Gr-4bl" firstAttribute="bottom" secondItem="gds-Ho-w8r" secondAttribute="bottom" id="HHk-zI-91N"/>
+                            <constraint firstItem="gUM-Gr-4bl" firstAttribute="trailing" secondItem="gds-Ho-w8r" secondAttribute="trailing" id="dSC-0J-KEr"/>
+                            <constraint firstItem="gds-Ho-w8r" firstAttribute="leading" secondItem="gUM-Gr-4bl" secondAttribute="leading" id="l3r-HL-wxN"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Previous Day" id="PV1-uN-YXe"/>
+                    <tabBarItem key="tabBarItem" title="Previous Day" image="backward" catalog="system" id="PV1-uN-YXe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKk-rM-aHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1605.7971014492755" y="87.723214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Drink View Controller-->
         <scene sceneID="ogY-Ii-xtB">
             <objects>
-                <viewController id="A97-Md-nov" sceneMemberID="viewController">
+                <viewController id="A97-Md-nov" customClass="AddDrinkViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iQF-k6-EYd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,26 +135,42 @@
         <!--Water Log-->
         <scene sceneID="ZYw-f3-d3F">
             <objects>
-                <viewController id="LcP-jX-KQf" customClass="AddDrinkViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LcP-jX-KQf" customClass="WaterLogViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1y-FU-CYG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-Gh-ihr">
-                                <rect key="frame" x="184" y="733" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="A97-Md-nov" kind="popoverPresentation" popoverAnchorView="3i6-Gh-ihr" id="ln4-lJ-Xb1">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-gC-Ra2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hydration Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acl-dr-c6k">
+                                        <rect key="frame" x="148" y="0.0" width="118.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-Gh-ihr">
+                                        <rect key="frame" x="173" y="739" width="68" height="30"/>
+                                        <state key="normal" title="Add Drink"/>
+                                        <connections>
+                                            <segue destination="A97-Md-nov" kind="popoverPresentation" popoverAnchorView="3i6-Gh-ihr" id="ln4-lJ-Xb1">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mgh-Mu-8Tm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mgh-Mu-8Tm" firstAttribute="bottom" secondItem="8bA-gC-Ra2" secondAttribute="bottom" id="XIJ-88-HgH"/>
+                            <constraint firstItem="8bA-gC-Ra2" firstAttribute="top" secondItem="mgh-Mu-8Tm" secondAttribute="top" id="aOT-Fs-vw0"/>
+                            <constraint firstItem="8bA-gC-Ra2" firstAttribute="leading" secondItem="mgh-Mu-8Tm" secondAttribute="leading" id="fHe-hi-otf"/>
+                            <constraint firstItem="mgh-Mu-8Tm" firstAttribute="trailing" secondItem="8bA-gC-Ra2" secondAttribute="trailing" id="j1D-UD-Ztj"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Water Log" id="MOb-Z7-hBp"/>
+                    <tabBarItem key="tabBarItem" title="Water Log" image="drop" catalog="system" id="MOb-Z7-hBp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjN-4e-BFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +182,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9JP-YA-xod" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HHi-ty-8kV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -104,6 +198,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="drop" catalog="system" width="101" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,7 +10,11 @@ import Foundation
 class HydratingDrinks: Drinks {
     var hydratePercent: Double
     
-    func addToWaterLevel () {
+    /*init (hydratePercent: Double) {
+        self.hydratePercent = hydratePercent
+    }*/
+    
+    func increaseWaterLevel () {
         
     }
 }

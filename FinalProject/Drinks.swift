@@ -44,13 +44,13 @@ import Foundation
 
 class Drinks {
     var type: String
-    var ammount: Double
+    var amount: Double
     var date: Date
     var time: Date
     
-    init (type: String, ammount: Double, date: Date, time: Date ) {
+    init (type: String, amount: Double, date: Date, time: Date ) {
         self.type = type
-        self.ammount = ammount
+        self.amount = amount
         self.date = date
         self.time = time
     }
