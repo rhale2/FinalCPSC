@@ -8,6 +8,9 @@
 import UIKit
 
 class PreviousDayViewController: UIViewController {
+    
+    @IBOutlet var hydrationLevelLabel: UILabel!
+    @IBOutlet var previousDayLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

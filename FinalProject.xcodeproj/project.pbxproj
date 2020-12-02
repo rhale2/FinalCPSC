@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9215E07B2576F0F4003ECD4F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9215E07A2576F0F4003ECD4F /* HealthKit.framework */; };
 		BF3D1C432575D8F5006B3D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */; };
 		BF3D1C452575D8F5006B3D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */; };
 		BF3D1C472575D8F5006B3D7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C462575D8F5006B3D7D /* SettingsViewController.swift */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9215E0782576F0F4003ECD4F /* FinalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalProject.entitlements; sourceTree = "<group>"; };
+		9215E07A2576F0F4003ECD4F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BF3D1C3F2575D8F5006B3D7D /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,17 +48,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9215E07B2576F0F4003ECD4F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9215E0792576F0F4003ECD4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9215E07A2576F0F4003ECD4F /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF3D1C362575D8F5006B3D7D = {
 			isa = PBXGroup;
 			children = (
 				BF3D1C412575D8F5006B3D7D /* FinalProject */,
 				BF3D1C402575D8F5006B3D7D /* Products */,
+				9215E0792576F0F4003ECD4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,7 @@
 		BF3D1C412575D8F5006B3D7D /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				9215E0782576F0F4003ECD4F /* FinalProject.entitlements */,
 				BF3D1C4D2575D8F7006B3D7D /* LaunchScreen.storyboard */,
 				BF3D1C482575D8F5006B3D7D /* Main.storyboard */,
 				BF3D1C5F2575DBC5006B3D7D /* WaterLogViewController.swift */,
@@ -314,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalProject/FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalProject/FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

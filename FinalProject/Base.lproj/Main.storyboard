@@ -54,6 +54,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pph-ZV-t7s">
                                         <rect key="frame" x="0.0" y="460" width="414" height="392"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaL-g7-asb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -68,6 +71,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="B5g-Xi-tWb"/>
+                    <connections>
+                        <outlet property="heightLabel" destination="vgZ-jK-B7Z" id="5bu-1i-LJN"/>
+                        <outlet property="heightNum" destination="T9M-Sd-3bs" id="1tA-UV-4T9"/>
+                        <outlet property="weightLabel" destination="fB0-qW-gyY" id="aen-jm-dFT"/>
+                        <outlet property="weightNum" destination="26d-Rd-TSf" id="7zp-PH-btS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +121,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Previous Day" image="backward" catalog="system" id="PV1-uN-YXe"/>
+                    <connections>
+                        <outlet property="hydrationLevelLabel" destination="Myr-6S-TMn" id="w0L-NW-gR7"/>
+                        <outlet property="previousDayLabel" destination="PV2-4T-Pzc" id="9Kg-V2-wQM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKk-rM-aHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,6 +166,7 @@
                                         <rect key="frame" x="173" y="739" width="68" height="30"/>
                                         <state key="normal" title="Add Drink"/>
                                         <connections>
+                                            <action selector="addDrink:" destination="LcP-jX-KQf" eventType="touchUpInside" id="SDR-w1-MP3"/>
                                             <segue destination="A97-Md-nov" kind="popoverPresentation" popoverAnchorView="3i6-Gh-ihr" id="ln4-lJ-Xb1">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
@@ -171,6 +185,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Water Log" image="drop" catalog="system" id="MOb-Z7-hBp"/>
+                    <connections>
+                        <outlet property="hydrationLabelLabel" destination="acl-dr-c6k" id="B7q-U8-7bg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjN-4e-BFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

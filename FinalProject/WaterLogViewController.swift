@@ -8,6 +8,12 @@
 import UIKit
 
 class WaterLogViewController: UIViewController {
+    
+    @IBOutlet var hydrationLabelLabel: UILabel!
+    
+    @IBAction func addDrink (_ sender: UIButton) {
+        // addDrink
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

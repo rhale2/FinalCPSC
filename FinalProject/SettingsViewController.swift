@@ -8,6 +8,15 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    @IBOutlet var heightLabel: UILabel!
+    @IBOutlet var weightLabel: UILabel!
+    @IBOutlet var heightNum: UITextField!
+    @IBOutlet var weightNum: UITextField!
+    
+    @IBAction func saveButton (_ sender: UIButton) {
+        // save
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
