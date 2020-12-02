@@ -45,6 +45,7 @@ class WaterLogViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
                 if let alertText = alert.textFields, let first = alertText.first, let text = first.text {
                 birthday = text
+                    print(birthday)
                 }
             }))
             self.present(alert, animated: true)
@@ -74,7 +75,8 @@ class WaterLogViewController: UIViewController {
                     self.present(alert, animated: true)
                 }
 
-                if let weightDouble = Double(weight) {
+                if let weightDouble = Double(weight), let age = dateFormatter.date(from: birthday) {
+                    settings.setAge(age: age)
                     settings.setName(name: name)
                     settings.setWeight(weight: weightDouble)
                 }
