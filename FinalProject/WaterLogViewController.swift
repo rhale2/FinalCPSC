@@ -10,19 +10,18 @@ import UIKit
 class WaterLogViewController: UIViewController {
     
     @IBOutlet var hydrationLabelLabel: UILabel!
+    @IBOutlet var giphImage: UIImageView!
     
     @IBAction func addDrink (_ sender: UIButton) {
         // addDrink
     }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    if HKHealthStore.isHealthDataAvailable() {
-        // Add code to use HealthKit here.
     }
     
 

@@ -173,60 +173,60 @@
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
                                                 <state key="normal" title="Button" image="milk"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuc-W2-Dbr">
-                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuc-W2-Dbr">
+                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
+                                                <state key="normal" title="Button" image="orange-juice"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="efr-vQ-VdU">
-                                        <rect key="frame" x="118" y="176.5" width="178" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="414" height="136.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5l-E0-MvJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5l-E0-MvJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="136.5"/>
+                                                <state key="normal" title="Button" image="soda"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fis-9W-39r">
-                                                <rect key="frame" x="66" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fis-9W-39r">
+                                                <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
+                                                <state key="normal" title="Button" image="coffee"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-0a-6dE">
-                                                <rect key="frame" x="132" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-0a-6dE">
+                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
+                                                <state key="normal" title="Button" image="tea"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bos-Y8-PQu">
-                                        <rect key="frame" x="118" y="353" width="178" height="136"/>
+                                        <rect key="frame" x="0.0" y="353" width="414" height="136"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-D3-KBC">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="136"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-D3-KBC">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="136"/>
+                                                <state key="normal" title="Button" image="energy-drink"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-5O-NZJ">
-                                                <rect key="frame" x="66" y="0.0" width="46" height="136"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-5O-NZJ">
+                                                <rect key="frame" x="144.5" y="0.0" width="125" height="136"/>
+                                                <state key="normal" title="Button" image="refresh"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="art-vi-xlf">
-                                                <rect key="frame" x="132" y="0.0" width="46" height="136"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="art-vi-xlf">
+                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="136"/>
+                                                <state key="normal" title="Button" image="cocktail"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JQ1-QT-5hS">
-                                        <rect key="frame" x="118" y="529" width="178" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="529" width="414" height="136.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQY-1n-FAg">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQY-1n-FAg">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="136.5"/>
+                                                <state key="normal" title="Button" image="wine"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-zg-V7L">
-                                                <rect key="frame" x="66" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-zg-V7L">
+                                                <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
+                                                <state key="normal" title="Button" image="beer"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-rz-S7d">
-                                                <rect key="frame" x="132" y="0.0" width="46" height="136.5"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-rz-S7d">
+                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
+                                                <state key="normal" title="Button" image="cup"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -331,10 +331,20 @@
     </scenes>
     <resources>
         <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="beer" width="512" height="512"/>
+        <image name="cocktail" width="512" height="512"/>
+        <image name="coffee" width="512" height="512"/>
+        <image name="cup" width="512" height="512"/>
         <image name="drop" catalog="system" width="101" height="128"/>
+        <image name="energy-drink" width="512" height="512"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="milk" width="512" height="512"/>
+        <image name="orange-juice" width="512" height="512"/>
+        <image name="refresh" width="512" height="512"/>
+        <image name="soda" width="512" height="512"/>
+        <image name="tea" width="512" height="512"/>
         <image name="water" width="512" height="512"/>
+        <image name="wine" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
