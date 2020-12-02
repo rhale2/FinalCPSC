@@ -48,14 +48,15 @@ class Drinks {
     var date: Date
     var time: Date
     
-    init (type: String, amount: Double, date: Date, time: Date ) {
+    init (type: String, amount: Double, date: Date, time: Date) {
         self.type = type
         self.amount = amount
         self.date = date
         self.time = time
     }
-    
+    /*
     if HKHealthStore.isHealthDataAvailable() {
         // Add code to use HealthKit here.
     }
+ */
 }
