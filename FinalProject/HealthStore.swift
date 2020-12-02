@@ -11,6 +11,12 @@ import HealthKit
 class HealthStore {
     var healthStore: HKHealthStore?
     
+    init () {
+        if HKHealthStore.isHealthDataAvailable() {
+            healthStore = HKHealthStore()
+        }
+    }
+    
     
     
     func requestWaterAuthorization (completion: @escaping (Bool) -> Void) {
@@ -20,7 +26,7 @@ class HealthStore {
             return completion(false)
         }
         
-        healthStore.requestAuthorization(toShare: [], read: [waterIntake]) { (success, error) in
+        healthStore.requestAuthorization(toShare: [waterIntake], read: [waterIntake]) { (success, error) in
             completion(success)
         }
     }
@@ -32,7 +38,7 @@ class HealthStore {
             return completion(false)
         }
         
-        healthStore.requestAuthorization(toShare: [], read: [caffineIntake]) { (success, error) in
+        healthStore.requestAuthorization(toShare: [caffineIntake], read: [caffineIntake]) { (success, error) in
             completion(success)
         }
         
