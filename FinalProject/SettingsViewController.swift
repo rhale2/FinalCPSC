@@ -9,6 +9,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var name: UITextField!
     @IBOutlet var heightLabel: UILabel!
     @IBOutlet var weightLabel: UILabel!
     @IBOutlet var heightNum: UITextField!

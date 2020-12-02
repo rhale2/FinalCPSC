@@ -8,6 +8,11 @@
 import UIKit
 
 class AddDrinkViewController: UIViewController {
+    
+    @IBOutlet var saveDrinkButton: UIButton!
+    
+    @IBOutlet var HydatingDrink: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

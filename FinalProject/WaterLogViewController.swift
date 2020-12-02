@@ -21,6 +21,10 @@ class WaterLogViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    if HKHealthStore.isHealthDataAvailable() {
+        // Add code to use HealthKit here.
+    }
+    
 
     /*
     // MARK: - Navigation

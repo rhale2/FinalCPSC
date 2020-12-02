@@ -54,4 +54,8 @@ class Drinks {
         self.date = date
         self.time = time
     }
+    
+    if HKHealthStore.isHealthDataAvailable() {
+        // Add code to use HealthKit here.
+    }
 }

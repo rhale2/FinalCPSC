@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9215E07B2576F0F4003ECD4F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9215E07A2576F0F4003ECD4F /* HealthKit.framework */; };
+		9215E08525773174003ECD4F /* WaterGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9215E08425773174003ECD4F /* WaterGraphic.swift */; };
 		BF3D1C432575D8F5006B3D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */; };
 		BF3D1C452575D8F5006B3D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */; };
 		BF3D1C472575D8F5006B3D7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C462575D8F5006B3D7D /* SettingsViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		9215E0782576F0F4003ECD4F /* FinalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalProject.entitlements; sourceTree = "<group>"; };
 		9215E07A2576F0F4003ECD4F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9215E08425773174003ECD4F /* WaterGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterGraphic.swift; sourceTree = "<group>"; };
 		BF3D1C3F2575D8F5006B3D7D /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3D1C422575D8F5006B3D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3D1C442575D8F5006B3D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */,
 				BF3D1C4B2575D8F7006B3D7D /* Assets.xcassets */,
 				BF3D1C502575D8F7006B3D7D /* Info.plist */,
+				9215E08425773174003ECD4F /* WaterGraphic.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				BF3D1C582575D976006B3D7D /* AddDrinkViewController.swift in Sources */,
 				BF3D1C672575E06E006B3D7D /* HydratingDrinks.swift in Sources */,
 				BF3D1C6A2575E09A006B3D7D /* DehydratingDrinks.swift in Sources */,
+				9215E08525773174003ECD4F /* WaterGraphic.swift in Sources */,
 				BF3D1C6E2575E0B2006B3D7D /* AlcoholicDrinks.swift in Sources */,
 				BF3D1C5C2575D988006B3D7D /* PreviousDayViewController.swift in Sources */,
 				BF3D1C632575DC0F006B3D7D /* Drinks.swift in Sources */,
@@ -330,12 +334,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FinalProject/FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUYPJD4NUE;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FinalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Sophie.Rebekah.StayHydrated;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,12 +354,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FinalProject/FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUYPJD4NUE;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FinalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Sophie.Rebekah.StayHydrated;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
