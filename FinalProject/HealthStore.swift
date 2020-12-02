@@ -44,6 +44,24 @@ class HealthStore {
         
     }
     
-    //func addWater (completion: @escaping (HKS))
+    func addWater (ounces: Double) {
+        let quantityType = HKQuantityType.quantityType(forIdentifier: .dietaryWater)
+        let qualityUnit = HKUnit(from: "fl_oz_us")
+        let quantityAmount = HKQuantity(unit: qualityUnit, doubleValue: ounces)
+        let today = Date()
+        
+        let sample = HKQuantitySample(type: quantityType!, quantity: quantityAmount, start: today, end: today)
+          let correlationType = HKObjectType.correlationType(forIdentifier: HKCorrelationTypeIdentifier.food)
+          // 4
+          let waterCorrelationForWaterAmount = HKCorrelation(type: correlationType!, start: today, end: today, objects: [sample])
+          // Send water intake data to healthStore…aka ‘Health’ app
+          // 5
+          self.healthStore?.save(waterCorrelationForWaterAmount, withCompletion: { (success, error) in
+            if (error != nil) {
+                NSLog("error occurred saving water data")
+            }
+          })
+        
+    }
 }
 

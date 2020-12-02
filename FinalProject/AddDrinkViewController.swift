@@ -9,11 +9,31 @@ import UIKit
 
 class AddDrinkViewController: UIViewController {
     
+    var healthStoreOptional: HealthStore? = nil
+    
     @IBOutlet var saveDrinkButton: UIButton!
     
     @IBOutlet var HydatingDrink: UIImageView!
     
-
+    @IBAction func waterButton(_ sender: UIButton) {
+        var amount: String = ""
+        
+        let alert = UIAlertController(title: "Enter how much water you drank in fluid onces.", message: nil, preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter water amount."
+        }
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
+            if let alertText = alert.textFields, let first = alertText.first, let text = first.text{
+            amount = text
+            }
+        }))
+        self.present(alert, animated: true)
+        
+        if (amount != "") {
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
