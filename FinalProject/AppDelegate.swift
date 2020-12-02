@@ -6,14 +6,26 @@
 //
 
 import UIKit
+import HealthKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var healthStore: HKHealthStore?
+    var window: UIWindow?
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if HKHealthStore.isHealthDataAvailable() {
+            healthStore = HKHealthStore()
+        }
+        
+        if let selfWindow = self.window, let vc = selfWindow.rootViewController as? WaterLogViewController {
+              vc.healthStore = self.healthStore
+            } else {
+                NSLog("unable to get rootViewControler")
+            }
+        
         return true
     }
 

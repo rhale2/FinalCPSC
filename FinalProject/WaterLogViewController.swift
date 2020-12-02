@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import HealthKit
 
 class WaterLogViewController: UIViewController {
     var settings = Settings()
     var disclaimerHasBeenDisplayed = false
+    var healthStore: HKHealthStore?
+    
+    
+    
+  
+
     
     @IBOutlet var hydrationLabelLabel: UILabel!
     
@@ -19,6 +26,7 @@ class WaterLogViewController: UIViewController {
         // addDrink
     }
     
+
     
 
     override func viewDidLoad() {
@@ -28,6 +36,23 @@ class WaterLogViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        var typesToShare = Set<HKSampleType>()
+        var typesToRead = Set<HKObjectType>()
+        
+        
+        typesToShare.insert(HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryWater)!)
+        typesToShare.insert(HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryCaffeine)!)
+        
+        typesToRead.insert(HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryWater)!)
+        typesToRead.insert(HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryCaffeine)!)
+        
+        self.healthStore?.requestAuthorization(toShare: typesToShare, read: typesToRead, completion: { (success, error) in
+            if (!success) {
+                return
+            }
+        })
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let _ = Date()
@@ -98,6 +123,32 @@ class WaterLogViewController: UIViewController {
                 
             }
         }
+        /*
+        func requestWaterAuthorization (completion: @escaping (Bool) -> Void) {
+            let waterIntake = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryWater)!
+            
+            guard let healthStore = self.healthStore else {
+                return completion(false)
+            }
+            
+            healthStore.requestAuthorization(toShare: [], read: [waterIntake]) { (success, error) in
+                completion(success)
+            }
+        }
+        
+        func requestCaffeineAuthorization (completion: @escaping (Bool) -> Void) {
+            let caffineIntake = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryCaffeine)!
+            
+            guard let healthStore = self.healthStore else {
+                return completion(false)
+            }
+            
+            healthStore.requestAuthorization(toShare: [], read: [caffineIntake]) { (success, error) in
+                completion(success)
+            }
+            
+        }
+ */
     }
     
 
