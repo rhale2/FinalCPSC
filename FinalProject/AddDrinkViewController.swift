@@ -10,6 +10,7 @@ import UIKit
 class AddDrinkViewController: UIViewController {
     
     var healthStoreOptional: HealthStore? = nil
+
     
     @IBOutlet var saveDrinkButton: UIButton!
     
