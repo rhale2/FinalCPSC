@@ -14,78 +14,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bfo-vC-Nct">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YwT-3l-DzJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ3-F0-qGD">
-                                                <rect key="frame" x="0.0" y="0.0" width="54" height="118"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-kk-uWX">
-                                                <rect key="frame" x="74" y="0.0" width="340" height="118"/>
+                                                <rect key="frame" x="74" y="0.0" width="340" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-pc-vZq">
-                                        <rect key="frame" x="0.0" y="138" width="414" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="116.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgZ-jK-B7Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="117.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-Sd-3bs">
-                                                <rect key="frame" x="75.5" y="0.0" width="338.5" height="117.5"/>
+                                                <rect key="frame" x="75.5" y="0.0" width="338.5" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-gK-eza">
-                                        <rect key="frame" x="0.0" y="275.5" width="414" height="118"/>
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="116.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-qW-gyY">
-                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="118"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26d-Rd-TSf">
-                                                <rect key="frame" x="78.5" y="0.0" width="335.5" height="118"/>
+                                                <rect key="frame" x="78.5" y="0.0" width="335.5" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cq3-1C-f1B">
-                                        <rect key="frame" x="0.0" y="413.5" width="414" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="409" width="414" height="116.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwr-vM-NTV">
-                                                <rect key="frame" x="0.0" y="0.0" width="39" height="117.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAI-cU-6AV">
-                                                <rect key="frame" x="39" y="0.0" width="375" height="117.5"/>
+                                                <rect key="frame" x="39" y="0.0" width="375" height="116.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pph-ZV-t7s">
-                                        <rect key="frame" x="0.0" y="551" width="414" height="301"/>
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="296.5"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaL-g7-asb"/>
@@ -124,23 +124,23 @@
             <objects>
                 <viewController id="3xi-AI-aJt" customClass="PreviousDayViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ar-6M-aLj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gds-Ho-w8r">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Water Log" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PV2-4T-Pzc">
-                                        <rect key="frame" x="115.5" y="0.0" width="183" height="233"/>
+                                        <rect key="frame" x="115.5" y="0.0" width="183" height="229.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-uL-rnt">
-                                        <rect key="frame" x="87" y="268" width="240" height="233"/>
+                                        <rect key="frame" x="87" y="264.5" width="240" height="230"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hydration Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myr-6S-TMn">
-                                        <rect key="frame" x="148" y="536" width="118.5" height="233"/>
+                                        <rect key="frame" x="148" y="529.5" width="118.5" height="229.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -195,10 +195,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8X-Q3-XvI">
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
                                                 <state key="normal" title="Button" image="milk"/>
+                                                <connections>
+                                                    <action selector="milkButton:" destination="A97-Md-nov" eventType="touchUpInside" id="2wp-hL-Bwl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuc-W2-Dbr">
                                                 <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
                                                 <state key="normal" title="Button" image="orange-juice"/>
+                                                <connections>
+                                                    <action selector="juiceButton:" destination="A97-Md-nov" eventType="touchUpInside" id="JYx-mW-iGv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -208,14 +214,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5l-E0-MvJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="136.5"/>
                                                 <state key="normal" title="Button" image="soda"/>
+                                                <connections>
+                                                    <action selector="sodaButton:" destination="A97-Md-nov" eventType="touchUpInside" id="vSB-pE-yRK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fis-9W-39r">
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
                                                 <state key="normal" title="Button" image="coffee"/>
+                                                <connections>
+                                                    <action selector="coffeeButton:" destination="A97-Md-nov" eventType="touchUpInside" id="HZa-fA-Mjo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-0a-6dE">
                                                 <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
                                                 <state key="normal" title="Button" image="tea"/>
+                                                <connections>
+                                                    <action selector="teaButton:" destination="A97-Md-nov" eventType="touchUpInside" id="otO-mR-ZCR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -225,14 +240,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-D3-KBC">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="136"/>
                                                 <state key="normal" title="Button" image="energy-drink"/>
+                                                <connections>
+                                                    <action selector="energyDrinkButton:" destination="A97-Md-nov" eventType="touchUpInside" id="744-4z-UQb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-5O-NZJ">
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="136"/>
                                                 <state key="normal" title="Button" image="refresh"/>
+                                                <connections>
+                                                    <action selector="sportsDrinkButton:" destination="A97-Md-nov" eventType="touchUpInside" id="e0o-xc-3AZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="art-vi-xlf">
                                                 <rect key="frame" x="289.5" y="0.0" width="124.5" height="136"/>
                                                 <state key="normal" title="Button" image="cocktail"/>
+                                                <connections>
+                                                    <action selector="cocktailButton:" destination="A97-Md-nov" eventType="touchUpInside" id="MIb-QF-KS1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -242,14 +266,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQY-1n-FAg">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="136.5"/>
                                                 <state key="normal" title="Button" image="wine"/>
+                                                <connections>
+                                                    <action selector="wineButton:" destination="A97-Md-nov" eventType="touchUpInside" id="A1M-cX-0HR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-zg-V7L">
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="136.5"/>
                                                 <state key="normal" title="Button" image="beer"/>
+                                                <connections>
+                                                    <action selector="beerButton:" destination="A97-Md-nov" eventType="touchUpInside" id="ZkI-lf-IVB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-rz-S7d">
                                                 <rect key="frame" x="289.5" y="0.0" width="124.5" height="136.5"/>
                                                 <state key="normal" title="Button" image="cup"/>
+                                                <connections>
+                                                    <action selector="otherDrinkButton:" destination="A97-Md-nov" eventType="touchUpInside" id="SvN-uM-cOC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

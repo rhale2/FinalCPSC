@@ -26,8 +26,24 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func saveButton (_ sender: UIButton) {
-        // save
+        if let settings = settingsOptional {
+            if let newName = name.text {
+                settings.setName(name: newName)
+            }
+            if let newHeightStr = heightNum.text {
+                if let newHeight = Double(newHeightStr) {
+                    settings.setHeight(height: newHeight)
+                }
+            }
+            if let newWeightStr = weightNum.text {
+                if let newWeight = Double(newWeightStr) {
+                    settings.setWeight(weight: newWeight)
+                }
+            }
+            //if let newAge
+        }
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
