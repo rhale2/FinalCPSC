@@ -14,7 +14,6 @@ struct Settings {
     static private var height: Double = 0.0
     static private var name: String = ""
     static var fileURL: URL = URL.init(fileURLWithPath: "Documents")
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     static func setName (name: String?) {
         if let userName = name {
@@ -104,36 +103,6 @@ struct Settings {
             print(error)
         }
         return (fileName, fileAge, fileWeight, fileHeight)
-    }
-    
-    /*
-     saves the trips using core data
-     
-     */
-    func saveSettings() {
-        do {
-            try context.save()
-        }
-        catch {
-            print("error saving settings \(error)")
-        }
-    }
-    
-    /*
-     the read portion of CRUD
-     
-     */
-    func loadSettings() {
-        let request: NSFetchRequest<Settings> = Settings.fetchRequest()
-        // when you execute a SQL SELECT statement, you usually filter the rows you want back in your query using a WHERE clause
-        // to do this with core data, we use a "predicate" and attach it to our request
-        // for categories, we want all rows in the category table, so we don't need to filter, but we will for items later...
-        do {
-            Settings = try context.fetch(request)
-        }
-        catch {
-            print("Error loading settings \(error)")
-        }
     }
     
 }
