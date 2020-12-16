@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(Settings)
-public class Settings: NSManagedObject {
+public class SettingsInfo: NSManagedObject {
 
 }

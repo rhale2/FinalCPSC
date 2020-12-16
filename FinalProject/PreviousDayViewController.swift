@@ -6,16 +6,26 @@
 //
 
 import UIKit
+import CoreData
 
 class PreviousDayViewController: UIViewController {
-    var settings: Settings? = nil
+    var setting = [SettingsInfo]()
+    var settingOptional: SettingsInfo? = nil
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet var hydrationLevelLabel: UILabel!
     @IBOutlet var previousDayLabel: UILabel!
 
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(documentsDirectoryURL)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -30,6 +40,10 @@ class PreviousDayViewController: UIViewController {
             print("1st time launch, showing info Alert.")
             UserDefaults.standard.set(true, forKey: "ShownAlert")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
     }
    
     func getAlerts () {
@@ -64,7 +78,6 @@ class PreviousDayViewController: UIViewController {
                             weightAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
                                 if let alertText = weightAlert.textFields, let first = alertText.first, let text = first.text {
                                     Settings.setWeight(weight: text)
-                                    Settings.createAndWriteToFile()
                                 }
                             }))
                             self.present(weightAlert, animated: true)
@@ -76,6 +89,42 @@ class PreviousDayViewController: UIViewController {
             }
         }))
         self.present(nameAlert, animated: true)
+        if let settings = settingOptional {
+            var (_,setAge) = Settings.getAge()
+            var setName =  Settings.getName()
+            var (_, setHeight) = Settings.getHeight()
+            var (_, setWeight) = Settings.getWeight()
+            
+            settings.age = setAge
+            settings.weight = setWeight
+            settings.height = setHeight
+            settings.name = setName
+        }
+        saveSettings()
+    }
+    
+    func saveSettings () {
+        do {
+            try context.save()
+        }
+        catch {
+            print("error saving settings \(error)")
+        }
+    }
+    
+    /*
+     the read portion of CRUD
+     
+     */
+    
+    func loadSettings () {
+        let request: NSFetchRequest<SettingsInfo> = SettingsInfo.fetchRequest()
+        do {
+            setting = try context.fetch(request)
+        }
+        catch {
+            print("Error loading settings \(error)")
+        }
     }
 }
 

@@ -22,3 +22,7 @@ extension SettingsInfo {
     @NSManaged public var weight: Double
 
 }
+
+extension SettingsInfo : Identifiable {
+    
+}

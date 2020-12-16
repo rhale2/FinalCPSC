@@ -69,39 +69,4 @@ struct Settings {
         return (String(self.weight), self.weight)
     }
     
-    
-    static func createAndWriteToFile () {
-        let fileName = "Settings"
-        let documentDirectoryUrl = try! FileManager.default.url(
-            for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
-        )
-        fileURL = documentDirectoryUrl.appendingPathComponent(fileName).appendingPathExtension("txt")
-        let stringData = "\(getName()) \n\(getAge()) \n\(getWeight()) \n\(getHeight())"
-        do {
-            try stringData.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print (error)
-        }
-    }
-    
-    static func readFromFile () -> (String, String, String, String) {
-        var fileName = ""
-        var fileAge = ""
-        var fileWeight = ""
-        var fileHeight = ""
-        var readFile = ""
-        do {
-            readFile = try String(contentsOf: fileURL)
-            let strings = readFile.components(separatedBy: .newlines)
-            fileName = strings[0]
-            fileAge = strings[1]
-            fileWeight = strings[2]
-            fileHeight = strings[3]
-        
-        } catch let error as NSError {
-            print(error)
-        }
-        return (fileName, fileAge, fileWeight, fileHeight)
-    }
-    
 }

@@ -25,6 +25,8 @@ class WaterLogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(documentsDirectoryURL)
 
         // Do any additional setup after loading the view.
     }

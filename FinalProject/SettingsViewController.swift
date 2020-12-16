@@ -12,7 +12,7 @@ import CoreData
 class SettingsViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var setting = [SettingsInfo]()
+    var setting: SettingsInfo? = nil
 
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var heightTextField: UITextField!
@@ -27,14 +27,16 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let (age, _) = Settings.getAge()
-        let (weight, _) = Settings.getWeight()
-        let (height, _) = Settings.getHeight()
-        nameTextField.text = Settings.getName()
-        heightTextField.text = height
-        weightTextField.text = weight
-        ageTextField.text = age
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        _ = Date()
+        
+        if let settings = setting , let birthday = settings.age as Date? {
+            nameTextField.text = settings.name
+            heightTextField.text = String(settings.height)
+            weightTextField.text = String(settings.weight)
+            ageTextField.text = dateFormatter.string(from: birthday)
+        }
         
     }
 
@@ -42,7 +44,7 @@ class SettingsViewController: UIViewController {
      saves the trips using core data
      
      */
-    func saveSettings() {
+    func saveSettings(context: NSManagedObjectContext) {
         do {
             try context.save()
         }
@@ -55,18 +57,7 @@ class SettingsViewController: UIViewController {
      the read portion of CRUD
      
      */
-    func loadSettings() {
-        let request: NSFetchRequest<SettingsInfo> = SettingsInfo.fetchRequest()
-        // when you execute a SQL SELECT statement, you usually filter the rows you want back in your query using a WHERE clause
-        // to do this with core data, we use a "predicate" and attach it to our request
-        // for categories, we want all rows in the category table, so we don't need to filter, but we will for items later...
-        do {
-            setting = try context.fetch(request)
-        }
-        catch {
-            print("Error loading settings \(error)")
-        }
-    }
+    
 
 }
 
