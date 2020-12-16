@@ -7,56 +7,101 @@
 
 import Foundation
 
-class Settings {
-    private var birthday: Date
-    private var weight: Double
-    private var height: Double
-    private var name: String
+struct Settings {
+    static private var age: Date = Date()
+    static private var weight: Double = 0.0
+    static private var height: Double = 0.0
+    static private var name: String = ""
+    static var fileURL: URL = URL.init(fileURLWithPath: "Documents")
     
-    init () {
-        self.birthday = Date()
-        self.weight = 0.0
-        self.height = 0.0
-        self.name = ""
+    static func setName (name: String?) {
+        if let userName = name {
+            self.name = userName
+        }
     }
     
-    func setAge (age: Date) {
-        self.birthday = age
+    static func setAge (birthday: String?) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let _ = Date()
+        
+        if let birthdate = birthday {
+            let date = dateFormatter.date(from: birthdate)
+            if let day = date {
+                self.age = day
+            }
+        }
     }
     
-    func setWeight (weight: Double) {
-        self.weight = weight
+    static func setWeight (weight: String?)  {
+        if let userWeight = weight, let doubleWeight = Double(userWeight) {
+            self.weight = doubleWeight
+        }
     }
     
-    func setHeight (height: Double) {
-        self.height = height
+    static func setHeight(height: String?)  {
+        if let userHeight = height, let doubleHeight = Double(userHeight) {
+            self.height = doubleHeight
+        }
     }
     
-    func setName (name: String) {
-        self.name = name
+    static func getName () -> String {
+        return self.name
     }
     
-    func getAge () -> String {
+    static func getAge () -> (String, Date) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let today = Date()
         let calendar = Calendar.current
-        let ageComponents = calendar.dateComponents([.year], from: birthday, to: today)
+        
+        let ageComponents = calendar.dateComponents([.year], from: self.age, to: today)
         let age = ageComponents.year!
-        return String(age)
+        
+        return (String(age), self.age)
     }
     
-    func getWeight () -> String {
-        return String(self.weight)
+    static func getHeight () -> (String, Double) {
+        return (String(self.height) ,self.height)
     }
     
-    func getHeight () -> String {
-        return String(self.height)
+    static func getWeight () -> (String, Double) {
+        return (String(self.weight), self.weight)
     }
     
-    func getName () -> String {
-        return self.name
+    
+    static func createAndWriteToFile () {
+        let fileName = "Settings"
+        let documentDirectoryUrl = try! FileManager.default.url(
+            for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
+        )
+        fileURL = documentDirectoryUrl.appendingPathComponent(fileName).appendingPathExtension("txt")
+        let stringData = "\(getName()) \n\(getAge()) \n\(getWeight()) \n\(getHeight())"
+        do {
+            try stringData.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+        } catch let error as NSError {
+            print (error)
+        }
     }
     
+    static func readFromFile () -> (String, String, String, String) {
+        var fileName = ""
+        var fileAge = ""
+        var fileWeight = ""
+        var fileHeight = ""
+        var readFile = ""
+        do {
+            readFile = try String(contentsOf: fileURL)
+            let strings = readFile.components(separatedBy: .newlines)
+            fileName = strings[0]
+            fileAge = strings[1]
+            fileWeight = strings[2]
+            fileHeight = strings[3]
+        
+        } catch let error as NSError {
+            print(error)
+        }
+        return (fileName, fileAge, fileWeight, fileHeight)
+    }
     
 }

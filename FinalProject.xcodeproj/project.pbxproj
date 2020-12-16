@@ -24,6 +24,7 @@
 		BF3D1C672575E06E006B3D7D /* HydratingDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C662575E06E006B3D7D /* HydratingDrinks.swift */; };
 		BF3D1C6A2575E09A006B3D7D /* DehydratingDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */; };
 		BF3D1C6E2575E0B2006B3D7D /* AlcoholicDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D1C6D2575E0B2006B3D7D /* AlcoholicDrinks.swift */; };
+		BFA7759425899E7C00165468 /* Settings.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFA7759325899E7C00165468 /* Settings.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BF3D1C662575E06E006B3D7D /* HydratingDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydratingDrinks.swift; sourceTree = "<group>"; };
 		BF3D1C692575E09A006B3D7D /* DehydratingDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DehydratingDrinks.swift; sourceTree = "<group>"; };
 		BF3D1C6D2575E0B2006B3D7D /* AlcoholicDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholicDrinks.swift; sourceTree = "<group>"; };
+		BFA7759325899E7C00165468 /* Settings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Settings.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		BF3D1C412575D8F5006B3D7D /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				BFA7759325899E7C00165468 /* Settings.txt */,
 				BF1438D825783CF500C6ED98 /* HealthStore.swift */,
 				9215E0782576F0F4003ECD4F /* FinalProject.entitlements */,
 				BF3D1C4D2575D8F7006B3D7D /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				BF3D1C4F2575D8F7006B3D7D /* LaunchScreen.storyboard in Resources */,
 				BF3D1C4C2575D8F7006B3D7D /* Assets.xcassets in Resources */,
 				BF3D1C4A2575D8F5006B3D7D /* Main.storyboard in Resources */,
+				BFA7759425899E7C00165468 /* Settings.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

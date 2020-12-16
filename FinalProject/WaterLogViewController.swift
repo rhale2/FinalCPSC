@@ -46,9 +46,7 @@ class WaterLogViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "SettingsSegue" {
-                if let settingsVC = segue.destination as? SettingsViewController {
-                    settingsVC.settingsOptional = settings
-                }
+                
             }
             else if identifier == "AddDrinkSegue" {
                 
