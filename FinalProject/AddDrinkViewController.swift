@@ -176,8 +176,8 @@ class AddDrinkViewController: UIViewController {
     }
     
     @IBAction func cocktailButton(_ sender: UIButton) {
-        var type = "Alcohol"
-        var subtype = "Cocktail"
+        let type = "Alcohol"
+        let subtype = "Cocktail"
         let alcPercent = 0.4
         
         let alert = UIAlertController(title: "Enter how much cocktail you drank in fluid onces.", message: nil, preferredStyle: .alert)
@@ -190,16 +190,15 @@ class AddDrinkViewController: UIViewController {
                     
                 }
                 let cocktail = AlcoholicDrinks(subtype: subtype, alcPercent: alcPercent, type: type, amount: amount, date: self.today, time: self.today)
-                
-                
+                self.drinks.append(cocktail)
             }
         }))
         self.present(alert, animated: true)
     }
     
     @IBAction func wineButton(_ sender: UIButton) {
-        var type = "Alcohol"
-        var subtype = "Wine"
+        let type = "Alcohol"
+        let subtype = "Wine"
         let alcPercent = 0.4
         
         let alert = UIAlertController(title: "Enter how much wine you drank in fluid onces.", message: nil, preferredStyle: .alert)
@@ -207,8 +206,12 @@ class AddDrinkViewController: UIViewController {
             textField.placeholder = "Enter wine amount."
         }
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
-            if let alertText = alert.textFields, let first = alertText.first, let text = first.text{
-                
+            if let alertText = alert.textFields, let first = alertText.first, let text = first.text, let amount = Double(text) {
+                if (text == "") {
+                    
+                }
+                let wine = AlcoholicDrinks(subtype: subtype, alcPercent: alcPercent, type: type, amount: amount, date: self.today, time: self.today)
+                self.drinks.append(wine)
             }
         }))
         self.present(alert, animated: true)
@@ -217,26 +220,30 @@ class AddDrinkViewController: UIViewController {
     }
     
     @IBAction func beerButton(_ sender: UIButton) {
-        var amount: String = ""
+        let type = "Alcohol"
+        let subtype = "Beer"
+        let alcPercent = 0.5
         
         let alert = UIAlertController(title: "Enter how much beer you drank in fluid onces.", message: nil, preferredStyle: .alert)
         alert.addTextField { (textField) in
             textField.placeholder = "Enter beer amount."
         }
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
-            if let alertText = alert.textFields, let first = alertText.first, let text = first.text{
-                amount = text
+            if let alertText = alert.textFields, let first = alertText.first, let text = first.text, let amount = Double(text) {
+                if (text == "") {
+                    
+                }
+                let beer = AlcoholicDrinks(subtype: subtype, alcPercent: alcPercent, type: type, amount: amount, date: self.today, time: self.today)
+                self.drinks.append(beer)
             }
         }))
         self.present(alert, animated: true)
-        
-        if (amount != "") {
-            
-        }
     }
     
     @IBAction func otherDrinkButton(_ sender: UIButton) {
-        var amount: String = ""
+        let type = "Alcohol"
+        let subtype = "Other"
+        let alcPercent = 0.5
         
         let alert = UIAlertController(title: "Enter how much you drank in fluid onces.", message: nil, preferredStyle: .alert)
         alert.addTextField { (textField) in
