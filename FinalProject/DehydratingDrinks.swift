@@ -5,6 +5,21 @@
 //  Created by Rebekah Hale on 11/30/20.
 //
 
+//coffee
+//- decaf or not
+//- ammount of shots
+//- ammount of liquid
+//energy drink
+//- ammount
+//soda
+//- caffinated
+//- diet - regular - sugar free
+//- ammount
+//tea
+//- decaf or not
+//- ammount of shots
+//- ammount of liquid
+
 import Foundation
 
 class DehydratingDrinks: Drinks {

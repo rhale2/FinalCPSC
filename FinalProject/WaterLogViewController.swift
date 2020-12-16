@@ -10,8 +10,6 @@ import HealthKit
 
 class WaterLogViewController: UIViewController {
     var settings = Settings()
-    var disclaimerHasBeenDisplayed = false
-    private var healthStore: HealthStore?
 
     
     @IBOutlet var hydrationLabelLabel: UILabel!
@@ -25,25 +23,10 @@ class WaterLogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        print(documentsDirectoryURL)
 
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        healthStore = HealthStore()
-        
-        if let healthStore = healthStore {
-            healthStore.requestCaffeineAuthorization { (success) in
-                
-            }
-            healthStore.requestWaterAuthorization { (success) in
-                
-            }
-        }
-        
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {

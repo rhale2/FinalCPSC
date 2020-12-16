@@ -5,6 +5,15 @@
 //  Created by Rebekah Hale on 11/30/20.
 //
 
+//alcohol
+//- wine
+//- - ammount
+//- beer
+//- - ammount
+//- cockatails = 40%
+//- - ammount
+//- other
+// - - ammount
 import Foundation
 
 class AlcoholicDrinks: Drinks {

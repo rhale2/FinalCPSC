@@ -7,10 +7,13 @@
 
 import UIKit
 import CoreData
+import HealthKit
 
 class PreviousDayViewController: UIViewController {
     var setting = [SettingsInfo]()
     var settingOptional: SettingsInfo? = nil
+    
+    private var healthStore: HealthStore?
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -26,6 +29,8 @@ class PreviousDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(documentsDirectoryURL)
         // Do any additional setup after loading the view.
     }
     
@@ -34,6 +39,16 @@ class PreviousDayViewController: UIViewController {
         if (isInfoShown == nil || isInfoShown == "") {
             UserDefaults.standard.setValue("ShownInfo", forKey: "Info")
             getAlerts()
+            healthStore = HealthStore()
+            
+            if let healthStore = healthStore {
+                healthStore.requestCaffeineAuthorization { (success) in
+                    
+                }
+                healthStore.requestWaterAuthorization { (success) in
+                    
+                }
+            }
         }
         let alertShown = UserDefaults.standard.bool(forKey: "ShownAlert")
         if !alertShown {
@@ -43,7 +58,6 @@ class PreviousDayViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
     }
    
     func getAlerts () {

@@ -7,35 +7,17 @@
 
 // DRINKS:
 /*
- coffee
- - decaf or not
- - ammount of shots
- - ammount of liquid
+ 
  water
  - ammount
- tea
- - decaf or not
- - ammount of shots
- - ammount of liquid
- alcohol
- - wine
- - - ammount
- - beer
- - - ammount
- - cockatails = 40%
- - - ammount
- - other
-  - - ammount
+ 
+ 
  juice
  - ammount
- soda
- - caffinated
- - diet - regular - sugar free
- - ammount
+
  milk
  - ammount
- energy drink
- - ammount
+ 
  sport drink
  - ammount
  */
