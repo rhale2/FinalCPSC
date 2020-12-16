@@ -251,14 +251,10 @@ class AddDrinkViewController: UIViewController {
         }
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (_) in
             if let alertText = alert.textFields, let first = alertText.first, let text = first.text{
-                amount = text
+          
             }
         }))
         self.present(alert, animated: true)
-        
-        if (amount != "") {
-            
-        }
     }
     
     override func viewDidLoad() {
