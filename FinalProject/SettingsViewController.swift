@@ -24,8 +24,10 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let (name, age, height, weight) = Settings.readFromFile()
-        nameTextField.text = name
+        let (age, _) = Settings.getAge()
+        let (weight, _) = Settings.getWeight()
+        let (height, _) = Settings.getHeight()
+        nameTextField.text = Settings.getName()
         heightTextField.text = height
         weightTextField.text = weight
         ageTextField.text = age
