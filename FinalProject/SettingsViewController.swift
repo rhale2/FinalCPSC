@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 @available(iOS 13.0, *)
 class SettingsViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var setting = [SettingsInfo]()
 
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var heightTextField: UITextField!
@@ -54,12 +56,12 @@ class SettingsViewController: UIViewController {
      
      */
     func loadSettings() {
-        let request: NSFetchRequest<Settings> = Settings.fetchRequest()
+        let request: NSFetchRequest<SettingsInfo> = SettingsInfo.fetchRequest()
         // when you execute a SQL SELECT statement, you usually filter the rows you want back in your query using a WHERE clause
         // to do this with core data, we use a "predicate" and attach it to our request
         // for categories, we want all rows in the category table, so we don't need to filter, but we will for items later...
         do {
-            Settings = try context.fetch(request)
+            setting = try context.fetch(request)
         }
         catch {
             print("Error loading settings \(error)")

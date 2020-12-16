@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import CoreData
 
 struct Settings {
     static private var age: Date = Date()
